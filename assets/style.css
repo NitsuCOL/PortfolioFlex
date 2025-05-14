@@ -14,6 +14,7 @@
 }
 
 /*-------------------MOBILE FIRST-----------------*/
+/*BARRA DE NAVEGACION*/
 header{
     width: 100%;
     height: 50px;
@@ -92,7 +93,67 @@ header{
     transform: translateX(0);
 }
 
-/*CLASE PARA OCULTAR COMPONENTES*/
-.hiden{
-    display: none;
+/*---------------------------------------------------------------------------*/
+/*-------------------CONTENIDO PRINCIPAL-----------------------------------*
+/*SECCION "SOBRE MI"*/
+main{
+    width: 100%;
+    min-height: 100dvh;
+}
+
+#sobre-mi{
+    background-color: var(--color-secundario);
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .card__sobre-mi{
+        background-color: var(--color-fondo);
+        width: 80%;
+        min-height: 310px;
+        padding: 5% 0 0 0;
+        color: var(--color-texto);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 20px;
+        overflow: hidden;
+
+        & img{
+            width: 180px;
+            border-radius: 50%;
+        }
+
+        & h2{
+            font-family: var(--fuente-titulo);
+        }
+
+        & p{
+            font-family: var(--fuente-parrafo);
+        }
+
+        & .social-media__sobre-mi{
+            background-color: var(--color-primario);
+            width: 100%;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    & .info__sobre-mi{
+        width: 85%;
+        margin-top: 2%;
+        padding-left: 4%;
+        font-family: var(--fuente-parrafo);
+        font-size: .9rem;
+        color: var(--color-texto);
+    }
 }
