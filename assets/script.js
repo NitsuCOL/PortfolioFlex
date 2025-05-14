@@ -2,19 +2,19 @@ const openMenu = document.getElementById('open-menu__nav');
 const closeMenu = document.getElementById('close-menu__nav');
 const sectionMenu = document.querySelector('.items-menu__nav');
 
-openMenu.addEventListener('click', () =>{
-    sectionMenu.classList.remove('hiden');
+openMenu.addEventListener('click', () => {
+    sectionMenu.classList.add('translate');
     document.body.style.overflow = 'hidden';
 });
 
-closeMenu.addEventListener('click', () =>{
-    sectionMenu.classList.add('hiden');
+closeMenu.addEventListener('click', () => {
+    sectionMenu.classList.remove('translate');
     document.body.style.overflow = '';
 });
 
 document.querySelectorAll('.items-menu__nav a').forEach(link => {
     link.addEventListener('click', () => {
-        sectionMenu.classList.add('hiden');
+        sectionMenu.classList.remove('translate');
         document.body.style.overflow = '';
     });
 });
