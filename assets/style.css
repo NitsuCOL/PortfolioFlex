@@ -163,6 +163,7 @@ main{
     background-color: var(--color-fondo);
     width: 100%;
     min-height: 100dvh;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,10 +188,6 @@ main{
         box-shadow: 0 4px 4px var(--color-primario);
         overflow: hidden;
         transition: width .3s ease;
-    }
-
-    & .project:hover{
-        width: 90%;
     }
 
         & .img-container__project{
@@ -280,5 +277,69 @@ main{
                 font-size: .9rem;
             }
         }
+    }
+}
+
+/*SECCION "CONTACTO"*/
+#contacto{
+    background-color: var(--color-fondo);
+    width: 100%;
+    padding: 7% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    & p{
+        width: 90%;
+        font-family: var(--fuente-parrafo);
+        font-size: .9rem;
+        color: var(--color-texto);
+    }
+
+    & .info__contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        & .email__contacto{
+            font-weight: bold;
+            font-size: .8rem;
+        }
+
+        & button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    & .social-media__contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        & a{
+            text-decoration: none;
+        }
+    }
+}
+
+/*FOOTER*/  
+#footer{
+    background-color: var(--color-primario);
+    width: 100%;
+    padding: 3% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & p{
+        font-size: .6rem;
+        font-family: var(--fuente-parrafo);
+        color: var(--color-texto);
     }
 }
