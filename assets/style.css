@@ -184,7 +184,7 @@ main{
         gap: 10px;
         align-items: center;
         border-radius: 10px;
-        box-shadow: 0 0 10px var(--color-primario);
+        box-shadow: 0 4px 4px var(--color-primario);
         overflow: hidden;
         transition: width .3s ease;
     }
