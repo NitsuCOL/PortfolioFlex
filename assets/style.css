@@ -311,7 +311,7 @@ main{
 
         & button{
             background-color: transparent;
-            border: none;
+            border: transparent;
             cursor: pointer;
         }
     }

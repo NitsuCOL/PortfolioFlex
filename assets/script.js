@@ -18,3 +18,24 @@ document.querySelectorAll('.items-menu__nav a').forEach(link => {
         document.body.style.overflow = '';
     });
 });
+
+//COPIAR EL CORREO ELECTRONICO
+const btnCopiar = document.getElementById('copy-email');
+const email = document.querySelector('.email__contacto').textContent;
+const iconEmail = document.getElementById('email-icon');
+btnCopiar.addEventListener('click', () => {
+    const tempInput = document.createElement('input');
+    tempInput.value = email;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+
+    iconEmail.style.stroke = 'rgb(5, 198, 5)';
+
+    setTimeout(() => {
+        iconEmail.style.stroke = '#60519b';
+    }, 2000);
+
+    alert('Correo copiado al portapapeles');
+});
