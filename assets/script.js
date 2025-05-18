@@ -36,6 +36,4 @@ btnCopiar.addEventListener('click', () => {
     setTimeout(() => {
         iconEmail.style.stroke = '#60519b';
     }, 2000);
-
-    alert('Correo copiado al portapapeles');
 });

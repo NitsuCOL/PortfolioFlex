@@ -24,7 +24,7 @@ header{
     & nav{
         width: 100%;
         height: 100%;
-        padding: 0 20px;
+        padding: 3% 20px;
         background-color: var(--color-fondo);
         display: flex;
         justify-content: space-between;
@@ -341,5 +341,91 @@ main{
         font-size: .6rem;
         font-family: var(--fuente-parrafo);
         color: var(--color-texto);
+    }
+}
+
+/*ESTILOS PARA TABLETS*/
+@media (min-width: 768px){
+    #open-menu__nav{
+        display: none;
+    }
+
+    .logo__nav{
+        padding-left: 4%;
+    }
+
+    .items-menu__nav{
+        background-color: transparent;
+        width: fit-content;
+        height: fit-content;
+        padding: 0 5%;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+        position: initial;
+        transform: none;
+        transition: none;
+        z-index: initial;
+
+        & svg{
+            display: none;
+        }
+
+        & ul{
+            height: initial;
+            font-size: 1.1rem;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+/*ESTILOS PARA LAPTOPS*/
+@media (min-width: 992px){
+    #sobre-mi{
+        flex-direction: row;
+        padding: 10%;
+        gap: 2%;
+    }
+
+    #proyectos{
+        & .project{
+            width: 70%;
+        }
+
+        & .info__project{
+            gap: 10px;
+
+            & p{
+                width: 100%;
+            }
+        }
+    }
+
+    #skills{
+        text-align: center;
+
+        & h2{
+            padding: 3% 0;
+        }
+
+        & p{
+            width: 70%;
+            padding: 0;
+        }
+
+        & .flexbox__skills{
+            margin: 2% 0;
+
+            & .container__skills{
+                padding: 5% 3%;
+                gap: 10px;
+            }
+        }
+    }
+
+    #contacto{
+        text-align: center;
+        gap: 30px;
     }
 }
