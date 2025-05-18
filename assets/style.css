@@ -290,6 +290,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    text-align: center;
 
     & p{
         width: 90%;
@@ -377,6 +378,10 @@ main{
             justify-content: center;
             align-items: center;
         }
+    }
+
+    #contacto{
+        text-align: center;
     }
 }
 
