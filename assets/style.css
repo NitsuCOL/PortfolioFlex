@@ -249,6 +249,21 @@ main{
                     gap: 10px;
                 }
             }
+
+            & .project__link{
+                width: fit-content;
+                padding-left: 1%;
+                margin: 1% 0;
+
+                & svg{
+                    transition: width .2s ease, height .2s ease;
+                }
+
+                & svg:hover{
+                    width: 21px;
+                    height: 21px;
+                }
+            }
         }
 }
 
@@ -402,6 +417,13 @@ main{
             flex-direction: row;
             justify-content: center;
             align-items: center;
+        }
+    }
+
+    .iconos-tecnologias{
+        & svg{
+            width: 2rem;
+            height: 2rem;
         }
     }
 
