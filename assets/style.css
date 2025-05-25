@@ -145,6 +145,15 @@ main{
             justify-content: center;
             align-items: center;
             gap: 20px;
+
+            & svg{
+                transition: width .3s ease, height .3s ease;
+            }
+
+            & svg:hover{
+                width: 22px;
+                height: 22px;
+            }
         }
     }
 
