@@ -232,6 +232,23 @@ main{
                 color: var(--color-texto);
                 font-family: var(--fuente-parrafo);
             }
+
+            & .project__tecnologias{
+                margin: 8px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 6px;
+
+                & .iconos-tecnologias{
+                    padding-left: 2%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
         }
 }
 
