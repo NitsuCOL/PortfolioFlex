@@ -1,6 +1,7 @@
 [
     {
         "id_project": 1,
+        "img_project": "assets/img/PortalIUB.webp",
         "name_project": "Chatbot para preguntas frecuentes sobre la Universidad de Barranquilla",
         "description": "Aplicación web desarrollada en equipo para responder preguntas frecuentes de los estudiantes de la Universidad de Barranquilla mediante un chatbot integrado con Dialogflow. Me encargué del diseño de la interfaz en Figma y del entrenamiento del chatbot.",
         "technologies": [{
@@ -8,17 +9,20 @@
             "css": "assets/svg/technologies/css.svg",
             "javaScript": "assets/svg/technologies/js.svg",
             "python": "assets/svg/technologies/python.svg"
-        }]
+        }],
+        "url": "https://portaliub-matk.onrender.com"
     },
     
     {
         "id_project": 2,
         "name_project": "Aplicativo web e-commerce",
+        "img_project": "assets/img/WebE-commerce.webp",
         "description": "El proyecto es una página web e-commerce de ropa, desarrollada por estudiantes, que incluye catálogo por género, filtros, vistas de producto, carrito de compras y autenticación de usuarios. Me encargue del desarrollo Front-End y parte del diseño inicial.",
         "technologies": [{
             "html": "assets/svg/technologies/html.svg",
             "css": "assets/svg/technologies/css.svg",
             "javaScript": "assets/svg/technologies/js.svg"
-        }]
+        }],
+        "url": "https://nitsucol.github.io/Aplicativo_web_e-commerce-BACK/"
     }
 ]

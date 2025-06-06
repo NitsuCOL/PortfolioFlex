@@ -1,7 +1,11 @@
+//IMPORTACIONES
+import dataProjects from "../projects/projects.js";
+
 const openMenu = document.getElementById('open-menu__nav');
 const closeMenu = document.getElementById('close-menu__nav');
 const sectionMenu = document.querySelector('.items-menu__nav');
 
+//ABRIR EL MENU DESPLEGABLE EN PANTALLAS PEQUEÑAS
 openMenu.addEventListener('click', () => {
     sectionMenu.classList.add('translate');
     document.body.style.overflow = 'hidden';
@@ -18,6 +22,7 @@ document.querySelectorAll('.items-menu__nav a').forEach(link => {
         document.body.style.overflow = '';
     });
 });
+//----------------------------------------------------------
 
 //COPIAR EL CORREO ELECTRONICO
 const btnCopiar = document.getElementById('copy-email');
@@ -37,3 +42,7 @@ btnCopiar.addEventListener('click', () => {
         iconEmail.style.stroke = '#60519b';
     }, 2000);
 });
+//-------------------------------------------------------------
+
+// LLamada a funciones
+dataProjects();
